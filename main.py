@@ -3,10 +3,12 @@
 import time
 
 print ("Welcome to the te reo quiz what is you're name?")
-print (" ")
+print ("")
 
 name = input()
 
+print ("")
+print ("kia ora " + name)
 print ("")
 print ("do you know how to play " + name + "?")
 print ("")
@@ -14,6 +16,8 @@ print ("")
 instrustions_help = input().lower()
 
 print ("")
+
+#if they user has never played before they can ask for instrustions the instrustions will help them and tell them what they might be facing against
 
 if instrustions_help == "yes" or instrustions_help  == "y":
   print ("hope you enjoy and have fun learning " + name + " :)")
@@ -30,12 +34,14 @@ elif  instrustions_help == "no"  or instrustions_help == "n" or instrustions_hel
     print("ill give 5 more seconds to read it over then " + name)
     time.sleep (5)
 
+# user will be asked how hard the diffiulty of the questions they want from easy to hard
+
 print ("------------------------------------------------------")
 
 print ("What difficulty do you wish to play on " + name + "?")
 
 chosen_difficulty = input("Easy Medium or Hard.").lower()
-
+# easy difficulty will keep to easy numuracy and vocabuary with hints on each question making them learn new things
 if chosen_difficulty == "easy" or  chosen_difficulty == "aesy" :
   print ("-----------------------------------------------")
   print ("")
@@ -58,6 +64,12 @@ if chosen_difficulty == "easy" or  chosen_difficulty == "aesy" :
     print ("A, B or C only " + name)
   if easy_question_1 == "b" :
     print ("Thats correct ready for the next question " + name)
+    
+    readyEQ2 = input().lower()
+    if readyEQ2 == "yeah" or readyEQ2 == "ye" or readyEQ2 == "yes" :
+      print ("----------------------------------------")
+      print ("paatai rua")
+
 
 
 
