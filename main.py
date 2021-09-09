@@ -54,21 +54,19 @@ if chosen_difficulty == "easy" or  chosen_difficulty == "aesy" :
   print ("B: 2021")
   print ("C: 2011")
   easy_question_1 = input("").lower()
-  if easy_question_1 == "a":
+  if easy_question_1 == "a" or easy_question_1 == "c" :
+    #if the user types in a question wrong they will be taught how to next time, if the awnser they chose was correct they will move on to the next question
     print ("-----------------------------------------")
     print ("thats incorrect if rua = 2 then rua mano would have to mean 2000 because there is 2 of the 1000. " + name + " This also follows for the next part rua tekau that means 20 and the last part tahi meaning one adding them together = 2021")
-  if easy_question_1 == "c" :
-    print ("-----------------------------------------")
-    print ("thats incorrect if rua = 2 then rua mano would have to mean 2000 because there is 2 of the 1000. " + name + " This also follows for the next part rua tekau that means 20 and the last part tahi meaning one adding them together = 2021")
-  elif easy_question_1 :
-    print ("A, B or C only " + name)
   if easy_question_1 == "b" :
     print ("Thats correct ready for the next question " + name)
-    
-    readyEQ2 = input().lower()
-    if readyEQ2 == "yeah" or readyEQ2 == "ye" or readyEQ2 == "yes" :
-      print ("----------------------------------------")
-      print ("paatai rua")
+readyEQ2 = input().lower()
+if readyEQ2 == "yeah" or readyEQ2 == "ye" or readyEQ2 == "yes" :
+ print ("----------------------------------------")
+ print ("paatai rua ( Question two ) kia ora" + "\n" )
+ print ("")
+elif easy_question_1 :
+  print ("A, B or C only " + name )
 
 
 
